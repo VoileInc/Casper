@@ -167,7 +167,7 @@ body {
 }
 
 .site-logo {
-    max-height: 45px;
+/*    max-height: 45px;--Voile Edit: remove size limit on logo to allow for large overlay */
 }
 
 .site-description {
