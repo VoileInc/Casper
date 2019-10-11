@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+background: #ffffff; /*    --Voile Edit: Make the background white*/
 }
 
 .img {
@@ -112,7 +112,7 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
+/*    color: #fff; --Voile Edit: remove white text which doesn't show up*/
     background: color(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
 }
@@ -152,9 +152,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10vw 4vw;
+    padding: 4vw 4vw 8vw 4vw;  /* --Voile Edit: Decrease top padding */
     min-height: 200px;
-    max-height: 450px;
+/*    max-height: 450px; --Voile Edit: Remove max height on logo*/
     text-align: center;
 }
 
@@ -167,15 +167,17 @@ body {
 }
 
 .site-logo {
-/*    max-height: 45px;--Voile Edit: remove size limit on logo to allow for large overlay */
+/*    max-height: 45px;--Voile Edit: remove size limit on logo to allow for large overlay, will take up more space on mobile */
+    max-width: 50%;
 }
 
 .site-description {
     z-index: 10;
     margin: 0;
-    padding: 5px 0;
+    padding: 25px 0 0 0;  /*--Voile Edit: decrease padding between description and logo*/
     font-size: 2.2rem;
     font-weight: 300;
+    max-width: 98%; /*--Voile Edit: add a little padding to the sides*/
     letter-spacing: 0.5px;
     opacity: 0.8;
 }
@@ -185,7 +187,12 @@ body {
         font-size: 3rem;
     }
     .site-description {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+    }
+    
+    .site-logo {
+/*      Voile Edit: allow the site logo to take up more space on mobile*/
+        max-width: 98%;
     }
 }
 
