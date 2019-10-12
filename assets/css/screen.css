@@ -425,7 +425,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex: 1 1 300px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+/*    overflow: hidden;*/
     margin: 0 20px 40px;
     min-height: 300px;
     background: #fff center center;
@@ -446,7 +446,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
 /*    overflow: hidden;  --Voile Edit: Cuts off part of image*/
     border-radius: 5px 5px 0 0;
-/*    box-shadow: */
 }
 
 .post-card-image {
@@ -651,17 +650,19 @@ The first (most recent) post in the list is styled to be bigger than the others 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) {
         flex: 1 1 100%;
         flex-direction: row;
+        box-shadow: none;
     }
 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-image-link {
         position: relative;
         flex: 1 1 auto;
         border-radius: 5px 0 0 5px;
+        box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
     }
 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-image {
         position: relative;
-        width: 100%; 
+/*        width: 100%; */
         /*Voile Edit: Add a little room for border using height & margin*/
         height: 80%; 
         margin: 15px;
