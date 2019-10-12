@@ -278,9 +278,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: var(--brand-primary); /*--Voile Edit: Set Link color to Blue*/
+    font-weight: 600;
     opacity: 0.8;
 }
+
+.nav-content.nav-current a {
+    
+}
+
 
 .nav li a:hover {
     text-decoration: none;
@@ -310,17 +316,19 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     margin: 0;
     padding: 10px;
-    color: #fff;
+    color: var(--brand-primary);
     opacity: 0.8;
 }
 
 .social-link:hover {
     opacity: 1;
+    fill: var(--brand-primary);
+    color: var(--brand-primary); /*--VoileEdit: Color social links in Voile Blue*/
 }
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    color: var(--brand-primary);
 }
 
 .social-link-fb svg {
@@ -332,7 +340,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-wb svg path {
-    stroke: #fff;
+    stroke: var(--brand-primary);
 }
 
 .social-link-rss svg {
@@ -342,8 +350,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button {
     display: block;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: var(--brand-primary) 1px solid;
+    color: var(--brand-primary);
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -353,6 +361,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button:hover {
     text-decoration: none;
     opacity: 1;
+/*    Voile Edits: hover states*/
+    color: var(--brand-primary);
+    border: var(--brand-primary) 1px solid;
 }
 
 .rss-button {
@@ -366,14 +377,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: var(--brand-primary);
 }
 
 .signin-button, .signout-button {
     display: none;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: var(--brand-primary) 1px solid;
+    color: var(--brand-primary);
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -557,7 +568,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 -5px;
     width: 34px;
     height: 34px;
-    border: #fff 2px solid;
+    border: var(--brand-primary) 2px solid;
     border-radius: 100%;
 }
 
@@ -567,7 +578,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 -6px;
     width: 56px;
     height: 56px;
-    border: #fff 2px solid;
+    border: var(--brand-primary) 2px solid;
     border-radius: 100%;
     transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.7s;
 }
@@ -1952,6 +1963,62 @@ Usage (In Ghost editor):
 .kg-image-card.kg-width-wide + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
+}
+
+.kg-bookmark-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+    border: 2px solid blue;
+}
+
+.kg-bookmark-content {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+    padding: 20px;
+}
+
+.kg-bookmark-title {
+    font-weight: 600;
+}
+
+.kg-bookmark-description,
+.kg-bookmark-metadata {
+    margin-top: 12px;
+}
+
+.kg-bookmark-thumbnail {
+    flex-basis: 15rem;
+    flex-grow: 1;
+}
+
+
+.kg-bookmark-thumbnail img {
+    vertical-align: bottom;
+    object-fit: cover;
+    width: 100%;
+}
+
+.kg-bookmark-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
+.kg-bookmark-author:after {
+    content: "•";
+    margin: 0 6px;
+}
+
+.kg-bookmark-card {
+    
+}
+
+.kg-bookmark-publisher {
+    
 }
 
 /* 8. Author Template
