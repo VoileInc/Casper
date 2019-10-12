@@ -168,7 +168,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 
 .site-logo {
 /*    max-height: 45px;--Voile Edit: remove size limit on logo to allow for large overlay, will take up more space on mobile */
-    max-width: 50%;
+    max-width: 90%;
 }
 
 .site-description {
