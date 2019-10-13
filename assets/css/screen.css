@@ -113,7 +113,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding-top: 12px;
     padding-bottom: 12px;
 /*    color: #fff; --Voile Edit: remove white text which doesn't show up*/
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: color(var(--brand-tertiary)) no-repeat center center;
     background-size: cover;
 }
 
@@ -139,7 +139,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     z-index: 10;
     display: block;
     height: 80px;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));
+/*    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));*/
 }
 
 .site-header.no-cover:before,
@@ -228,6 +228,20 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     white-space: nowrap;
 
     -ms-overflow-scrolling: touch;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .site-nav-left {
+        margin-right: 0;
+        padding-left: 4vw;
+    }
+    .site-nav-right {
+        display: none;
+    }
 }
 
 /* Site Nav Hack Explanation (above):
@@ -394,19 +408,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .signin-button:hover, .signout-button:hover {
     text-decoration: none;
     opacity: 1;
-}
-@media (max-width: 700px) {
-    .site-header {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .site-nav-left {
-        margin-right: 0;
-        padding-left: 4vw;
-    }
-    .site-nav-right {
-        display: none;
-    }
 }
 
 
