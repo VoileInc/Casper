@@ -214,20 +214,33 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     overflow-y: hidden;
     height: 40px;
     font-size: 1.2rem;
+    
+/*    Voile Edits*/
+    overflow-x: auto;
+     -webkit-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .site-nav-left {
     display: flex;
     align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+/*    overflow-x: auto;*/
+/*    overflow-y: hidden;*/
+/*    -webkit-overflow-scrolling: touch;*/
     margin-right: 10px;
-    padding-bottom: 80px;
+/*    padding-bottom: 80px;*/
     letter-spacing: 0.4px;
     white-space: nowrap;
 
-    -ms-overflow-scrolling: touch;
+/*    -ms-overflow-scrolling: touch;*/
+}
+
+.site-nav-right{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 4vw;
 }
 
 @media (max-width: 700px) {
@@ -238,9 +251,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     .site-nav-left {
         margin-right: 0;
         padding-left: 4vw;
+        flex: 0 0 auto; /* Voile Edit:*/
     }
     .site-nav-right {
-        display: none;
+/*        display: none;*/
     }
 }
 
