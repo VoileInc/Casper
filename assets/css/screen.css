@@ -780,8 +780,10 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 .post-full-image {
-    margin: 0 -10vw -165px;
-    height: 800px;
+/*    margin: 0 -10vw -165px; Voile Edit: image overlap*/
+    margin-bottom: 60px;
+    height: 600px;
+/*    height: 800px;*/
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
@@ -808,7 +810,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
     min-height: 230px;
     font-family: Montserrat, serif;
     font-size: 2.2rem;
-    line-height: 1.6em;
+/*    line-height: 1.6em; Voile Edit*/
+    line-height: 1.3em;
     background: #fff;
 }
 
@@ -1044,13 +1047,14 @@ Usage (In Ghost editor):
 .post-full-content h5,
 .post-full-content h6 {
     color: color(var(--darkgrey) l(-5%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .post-full-content h1 {
     margin: 0.5em 0 0.2em 0;
     font-size: 4.6rem;
     font-weight: 700;
+    text-align: center;
 }
 @media (max-width: 500px) {
     .post-full-content h1 {
@@ -1059,9 +1063,12 @@ Usage (In Ghost editor):
 }
 
 .post-full-content h2 {
-    margin: 0.5em 0 0.2em 0;
+/*    margin: 0.5em 0 0.2em 0; Voile Edit*/
+    margin: 1.5em 0 1em 0;
     font-size: 3.6rem;
     font-weight: 700;
+    text-align: center;
+    font-family: CaslonGraphiqueEF;
 }
 @media (max-width: 500px) {
     .post-full-content h2 {
@@ -1070,9 +1077,11 @@ Usage (In Ghost editor):
 }
 
 .post-full-content h3 {
-    margin: 0.5em 0 0.2em 0;
+/*    margin: 0.5em 0 0.2em 0; Voile Edit*/
+    margin: 0.5em 0 0.5em 0;
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 900;
+    color: #0098FF;
 }
 @media (max-width: 500px) {
     .post-full-content h3 {
@@ -1096,9 +1105,11 @@ Usage (In Ghost editor):
     margin: 0.5em 0;
     padding: 1em 0 1.5em;
     border: 0;
-    color: var(--blue);
+/*    color: var(--blue);*/
     font-family: Montserrat,serif;
-    font-size: 3.2rem;
+/*    font-size: 3.2rem;*/
+    font-size: 2.8rem;
+    font-weight: 600;
     line-height: 1.35em;
     text-align: center;
 }
@@ -1903,6 +1914,8 @@ Usage (In Ghost editor):
     flex-direction: column;
     align-items: center;
     max-width: 920px;
+    font-size: 80%; 
+/*    font-size: Voile Edit*/
 }
 
 .post-template .post-content > p:first-child {
