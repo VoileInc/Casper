@@ -100,7 +100,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     }
     .home-template .site-nav {
         position: relative;
-        top: -70px;
+        /* top: -70px; */
     }
 }
 
