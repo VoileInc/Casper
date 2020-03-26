@@ -262,7 +262,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     .site-nav-left {
         margin-right: 0;
         padding-left: 4vw;
-        flex: 0 0 auto; /* Voile Edit:*/
+        /* flex: 0 0 auto; Voile Edit: */
     }
     .site-nav-right {
 /*        display: none;*/
