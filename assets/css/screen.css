@@ -171,6 +171,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 .site-logo {
     /* max-height: 45px; --Voile Edit: remove size limit on logo to allow for large overlay, will take up more space on mobile */
     max-width: 90%;
+    padding-right: 2vw;
 }
 
 .site-description {
@@ -199,7 +200,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     
     .site-logo {
 /*      Voile Edit: allow the site logo to take up more space on mobile*/
-        max-width: 80%;
+        /* max-width: 80%; */
     }
 }
 
@@ -290,7 +291,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .site-nav-logo img {
     display: block;
     width: auto;
-    height: 32px;
+    height: 34px;
 }
 
 .nav {
