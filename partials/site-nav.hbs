@@ -3,6 +3,7 @@
         {{!-- {{^is "home"}} --}}
             {{#if @blog.logo}}
                 <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+                {{!-- <a class="site-nav-logo" href="{{@site.url}}"><img src="assets/bare-title.svg" alt="{{@site.title}}" /></a> --}}
             {{else}}
                 <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
             {{/if}}
@@ -31,6 +32,6 @@
             <a class="signin-button" href="#signin" data-members-signin>Sign In</a>
             <a class="signout-button" href="#signout" data-members-signout>Sign Out</a>
         {{/if}}
-        <a class="btn btn-primary" href="#" role="button">Sign Up Early</a>
+        <a class="button-default" href="#" role="button">Sign Up Early</a>
     </div>
 </nav>

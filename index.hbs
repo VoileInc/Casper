@@ -9,12 +9,14 @@ into the {body} of the default.hbs template --}}
         <div class="site-header-content">
             <h1 class="site-title">
                 {{#if @blog.logo}}
-                    <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
+                    {{!-- <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}" /> --}}
+                    {{!-- <img class="site-logo" src="assets/bare-title.svg" alt="{{@site.title}}" /> --}}
                 {{else}}
                     {{@site.title}}
                 {{/if}}
             </h1>
             <h2 class="site-description">{{@site.description}}</h2>
+            <h3 class="site-subdescription">Helping brands find love and bloggers make money.</h3>
         </div>
         
     </div>
