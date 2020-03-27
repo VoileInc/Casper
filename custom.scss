@@ -1,0 +1,10 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// $body-color: #0078FF;
+.btn {
+    background-color: #0078FF;
+    border-color: #0078FF;
+}
