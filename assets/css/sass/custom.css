@@ -3874,7 +3874,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
-.nav-tabs .nav-link {
+
+.nav-tabs > a{
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -3882,9 +3883,31 @@ input[type=button].btn-block {
   text-transform: none;
   font-style: italic;
   text-align: left;
+  font-weight: 800;
+  justify-content: left;
 }
 
-.nav-link .detail{
+
+.nav-tabs .nav-link > img {
+  size: 1vw;
+  margin-bottom: 16px;
+  opacity: .4;
+}
+
+.nav-tabs .nav-link.active > img {
+  opacity: .9;
+}
+
+
+.nav-tabs > a > p {
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.nav-link .detail {
   font-style: normal !important;
   /* color: var(--voiletext-inactive); */
 }

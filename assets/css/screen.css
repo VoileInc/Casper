@@ -537,13 +537,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     background-repeat: no-repeat;
 }
 
-.how-it-works-visual {
-    /* background-position: center;
-    background-size: contain;
-    /* min-height: 400px; */
-    /* padding: 60px; */
-    /* background-repeat: no-repeat; */
+.section-three > h2 {
+    font-size: 3rem;
+    margin-left: 4vw;
+    margin-bottom: 0;
 }
+
 
 /* 5d. Section Four */
 .section-four {
