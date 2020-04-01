@@ -3,23 +3,24 @@
 into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
-<header class="site-header outer {{#if @blog.cover_image}}" style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
-{{> "site-nav"}}
+<header class="site-header outer {{#if @blog.cover_image}}"
+    style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}">
+    {{> "site-nav"}}
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
                 {{#if @blog.logo}}
-                    {{!-- <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}" /> --}}
-                    {{!-- <img class="site-logo" src="assets/bare-title.svg" alt="{{@site.title}}" /> --}}
+                {{!-- <img class="site-logo" src="{{@site.logo}}" alt="{{@site.title}}" /> --}}
+                {{!-- <img class="site-logo" src="assets/bare-title.svg" alt="{{@site.title}}" /> --}}
                 {{else}}
-                    {{@site.title}}
+                {{@site.title}}
                 {{/if}}
             </h1>
             <h2 class="site-description">{{@site.description}}</h2>
             <h3 class="site-subdescription">Helping brands find love and bloggers make money.</h3>
             <button class="button-default">Sign up early</button>
         </div>
-        
+
     </div>
 </header>
 
@@ -29,11 +30,10 @@ into the {body} of the default.hbs template --}}
 
         <div class="section-one">
             <div class="wordpress-plugin-background">
-                <img  class="wordpress-plugin-mockup" src="assets/landing-page-background-one.png"/>
+                <img class="wordpress-plugin-mockup" src="assets/landing-page-background-one.png" />
+                <h3 class="plugin-launch-detail">Coming soon to Wordpress Plugins</h3>
             </div>
         </div>
-
-        <p class="endorsement">Built with influencers.</br>Endorsed by brands.</p>
 
         <div class="section-two">
             <div class="ad-in-website-info">
@@ -42,20 +42,31 @@ into the {body} of the default.hbs template --}}
                 <h3>Relevant to your audience.</h3>
                 <h3>$uper clickable.</h3>
             </div>
-            <img  class="ad-in-website-mockup" src="assets/missmoorestyle-with-ad.png"/>
+            <img class="ad-in-website-mockup" src="assets/missmoorestyle-with-ad.png" />
         </div>
 
-        
+        <h2 class="endorsement">Built with influencers.</br> Built with brands.</h2>
+
+        <div class="section-three" >
+            <img class="how-it-works-visual" src="assets/temp-registration-mockup.svg"/>
+        </div>
+
+        <div class="section-four">
+            <h2>Your website. Your brand. Your business.</h2>
+            <button class="button-default sign-up-early">Sign up</button>
+        </div>
+
+        <div class="section-five">
+            <h2>Fashion brands <a>Learn More Here ></a></h2>
+        </div>
 
 
-        <div class="post-feed">
+
+        {{!-- <div class="post-feed">
             {{#foreach posts}}
-
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+            {{> "post-card"}}
 
             {{/foreach}}
-        </div>
-
+        </div> --}}
     </div>
 </main>

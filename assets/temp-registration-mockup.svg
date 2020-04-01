@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1368px" height="879px" viewBox="0 0 1368 879" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>temp-registration-mockup</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1210" height="721"></rect>
+        <filter x="-9.9%" y="-16.6%" width="119.8%" height="133.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="40" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.168563179   0 0 0 0 0.168563179   0 0 0 0 0.168563179  0 0 0 0.155321241 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="14.3919056%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.86090472" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-46.6364297%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.86090472" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="WP-Voile-Ads-Plugin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-278.000000, -3571.000000)">
+            <g id="How-it-works" transform="translate(2.000000, 3490.000000)">
+                <g id="temp-registration-mockup" transform="translate(355.000000, 160.000000)">
+                    <g id="Shadow-Frame">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Wordpress-Site-Dashboard"></g>
+                    <g id="browser-bar">
+                        <rect id="Rectangle" fill="#C1C1BA" opacity="0.617629278" x="0" y="0" width="1210" height="36.961545" rx="3"></rect>
+                        <ellipse id="Oval" fill="#FFFFFF" cx="20.7860489" cy="18.8167865" rx="6.29880271" ry="6.7202809"></ellipse>
+                        <ellipse id="Oval-Copy" fill="#FFFFFF" cx="43.4617387" cy="18.8167865" rx="6.29880271" ry="6.7202809"></ellipse>
+                        <ellipse id="Oval-Copy-2" fill="#FFFFFF" cx="66.1374284" cy="18.8167865" rx="6.29880271" ry="6.7202809"></ellipse>
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.731003534" x="312.39611" y="5.27777778" width="587.678293" height="26.2090955" rx="8"></rect>
+                        <text id="voile.io/register-yo" font-family="Montserrat-Italic, Montserrat" font-size="15" font-style="italic" font-weight="normal" letter-spacing="-0.178125" fill="#4C4B46">
+                            <tspan x="513.004866" y="23.9722222">voile.io/register-your-blog</tspan>
+                        </text>
+                    </g>
+                    <polygon id="Gradient" fill="url(#linearGradient-3)" points="0 281 1117.55798 281 1210 281 1210 724 0 724"></polygon>
+                    <polygon id="Gradient-Copy" fill="url(#linearGradient-4)" transform="translate(943.000000, 298.500000) scale(1, -1) translate(-943.000000, -298.500000) " points="676 197 1169.20327 197 1210 197 1210 400 676 400"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
