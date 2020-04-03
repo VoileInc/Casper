@@ -97,7 +97,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        margin-top: -70px;
+        /* margin-top: -70px; */
         padding-top: 0;
     }
     .home-template .site-nav {
@@ -158,6 +158,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     min-height: 200px;
 /*    max-height: 450px; --Voile Edit: Remove max height on logo*/
     text-align: center;
+}
+
+.site-header-content .button-default {
+    margin-top: 2vw;
 }
 
 .site-title {
@@ -327,8 +331,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 0.8;
 }
 
-.nav-content.nav-current a {
-    
+.nav-blog.nav-current a {
+    color: var(--brand-primary);
 }
 
 
@@ -436,7 +440,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-left: 13px;
 }
 
-.inner .button-default {
+.inner.button-default {
     margin-top: 32px;
     width: 240px;
     font-size: 14px;
@@ -528,7 +532,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 /* 5c. Section Three */
 .section-three {
-    background-image: url(../section-three-background.png);
+    background-image: url(../images/section-three-background.jpg);
     background-position: center;
     background-size: cover;
     margin-top: 12vw;
@@ -546,7 +550,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 /* 5d. Section Four */
 .section-four {
-    background-image: url(../business-art.svg);
+    background-image: url(../images/business-art.svg);
     background-position: center;
     background-size: contain;
     display: flex;
@@ -595,8 +599,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    visibility: collapse;
-    margin: 0 -20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vw;
+    max-width: 1040px;
     /* padding: 40px 0 0 0; */
 }
 
