@@ -162,6 +162,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 
 .site-header-content .button-default {
     margin-top: 2vw;
+    padding: 0 48px;;
 }
 
 .site-title {
