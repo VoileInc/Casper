@@ -171,7 +171,9 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding: 0;
     font-size: 3.8rem;
     font-weight: 700;
-    -webkit-font-smoothing: subpixel-antialiased;
+    color: color(var(--brand-secondary) l(-5%));
+    font-family: Caslon Graphique EF;
+    /* -webkit-font-smoothing: subpixel-antialiased; */
 }
 
 .site-logo {
@@ -188,6 +190,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding: 25px 0 16px 0;  /*--Voile Edit: decrease padding between description and logo*/
     font-size: 2.5rem;
     font-weight: 800;
+    font-family: Montserrat;
     max-width: 98%; /*--Voile Edit: add a little padding to the sides*/
     letter-spacing: 0.5px;
     opacity: 0.9;
@@ -503,6 +506,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 1;
 }
 
+/* LANDING PAGE */
 /* 5a. Section One */
 .section-one{
     display: flex;
@@ -623,10 +627,28 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-transform: uppercase;
 
 }
-
+/* END OF LANDING PAGE */
 
 /* 6. Post Feed
 /* ---------------------------------------------------------- */
+
+.blog-header {
+    text-align: center;
+    padding: 4vw 0;
+}
+
+.blog-title {
+    font-family: Caslon Graphique EF;
+    font-size: 4rem;
+    color: var(--brand-secondary);
+    margin-top: 2vw;
+}
+
+.blog-description {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    margin-bottom: 2vw;
+}
 
 .post-feed {
     position: relative;
@@ -634,7 +656,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4vw;
     max-width: 1040px;
     /* padding: 40px 0 0 0; */
 }
@@ -647,7 +668,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 /*    margin: 0 20px 40px;*/
     margin: 0 15px 30px;
     min-height: 300px;
-    background: #fff center center;
+    /* background: #fff center center; */
+    background: transparent center center;
     background-size: cover;
     border-radius: 5px;
 /*    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;*/
@@ -708,7 +730,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-top: 0;
     font-family: Caslon Graphique EF;
     font-size: 2em;
-    font-weight: 300;
     font-weight: 300;
 }
 
@@ -2614,3 +2635,4 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
+
