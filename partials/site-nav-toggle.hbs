@@ -1,38 +1,74 @@
-<nav class="site-nav">
-    <div class="site-nav-left">
-        {{!-- {{^is "home"}} --}}
-            {{#if @blog.logo}}
-                <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
-                {{!-- <a class="site-nav-logo" href="{{@site.url}}"><img src="assets/bare-title.svg" alt="{{@site.title}}" /></a> --}}
-            {{else}}
-                <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
-            {{/if}}
-        {{!-- {{/is}}  --}}
-        {{#if @blog.navigation}}
-            {{navigation}}
-        {{/if}}
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-            
-            {{#if @blog.facebook}}
-            <a class="social-link social-link-ig" href="https://instagram.com/voileinc" target="">{{> "icons/instagram"}}</a>
-                <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-            {{/if}}
-            {{#if @blog.twitter}}
-                <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-            {{/if}}
-        </div>
-        {{#if @labs.subscribers}}
+{{!-- <nav class="site-nav"> --}}
+<nav class="site-nav navbar navbar-expand-lg navbar-light">
+    {{#if @blog.logo}}
+    <a class="site-nav-logo" href="{{@site.url}}"><img class="d-inline-block align-top" src="{{@site.logo}}"
+            alt="{{@site.title}}" /></a>
+    {{else}}
+    <a class="d-inline-bloc align-top site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+    {{/if}}
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            {{!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Why Voile Ads?<span class="sr-only">(current)</span></a>
+                </li> --}}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Why Voile Ads?
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">For Influencers</a>
+                    <a class="dropdown-item" href="#">For Brands</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Our Origins Story</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Community
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Listen to our podcast</a>
+                    <a class="dropdown-item" href="#">Join our Slack community</a>
+                    <a class="dropdown-item" href="#">Subscribe to our newsletter</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog">Le Blog</a>
+            </li>
+        </ul>
+        <div class="site-nav-right">
+            <div class="social-links">
+
+                {{#if @blog.facebook}}
+                <a class="social-link social-link-ig" href="https://instagram.com/voileinc"
+                    target="">{{> "icons/instagram"}}</a>
+                <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" title="Facebook"
+                    target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                {{/if}}
+                {{#if @blog.twitter}}
+                <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" title="Twitter"
+                    target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                {{/if}}
+            </div>
+            {{#if @labs.subscribers}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
-        {{else}}
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-        {{/if}}
-        {{#if @labs.members}}
+            {{else}}
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS"
+                target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+            {{/if}}
+            {{#if @labs.members}}
             <a class="signin-button" href="#signin" data-members-signin>Sign In</a>
             <a class="signout-button" href="#signout" data-members-signout>Sign Out</a>
-        {{/if}}
+            {{/if}}
+        </div>
         <a class="button-default" href="#" role="button">Sign Up Early</a>
-    </div>
 </nav>
- 
+{{!-- </nav> --}}
