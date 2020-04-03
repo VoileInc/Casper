@@ -1,16 +1,13 @@
 @font-face {
     font-family: 'Caslon Graphique EF';
-    src: url('caslongraphiqueef-webfont.woff2') format('woff2'),
-         url('caslongraphiqueef-webfont.woff') format('woff'),
-         url('CaslonGraphiqueEF.ttf') format('truetype');
+    src: url('CaslonGraphiqueEF.ttf') format('truetype'),
+        url('caslongraphiqueef-webfont.woff2') format('woff2'),
+        url('caslongraphiqueef-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
-
 }
 
 @font-face {
     font-family: 'Permanent Marker';
     src: url('PermanentMarker-Regular.ttf') format('truetype');
-    font-display: fallback;
 }

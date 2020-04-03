@@ -171,6 +171,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding: 0;
     font-size: 3.8rem;
     font-weight: 700;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .site-logo {
@@ -329,17 +330,18 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 10px 13px;
     color: var(--brand-secondary); /*--Voile Edit: Set Link color to Blue*/
     font-weight: 600;
-    opacity: 0.8;
+    opacity: 1;
 }
 
-.nav-blog.nav-current a {
+.nav .nav-current a {
     color: var(--brand-primary);
+    font-weight: 800;
 }
-
 
 .nav li a:hover {
     text-decoration: none;
-    opacity: 1;
+    color: var(--brand-primary);
+    font-weight: 800;
 }
 
 .site-nav-right {
@@ -568,6 +570,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     /* top:50%;  */
     left:50%;
     right: 50%;
+    margin-bottom: 4vw;
     /* bottom: 50%; */
 }
 
