@@ -2593,6 +2593,8 @@ Usage (In Ghost editor):
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
+    padding-left: 4vw;
+    padding-right: 4vw;
     color: #fff;
     background: color(var(--brand-primary));
 }
