@@ -252,6 +252,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding: 0 4vw;
 }
 
+.navbar {
+    z-index: 1000;
+}
+
 .nav-link {
     font-size: 1.3rem;
     font-weight: 800;
@@ -270,7 +274,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 }
 
 .navbar-nav li a:hover {
-    color: var(--brand-primary)
+    color: var(--brand-primary);
 }
 
 .dropdown-item {
@@ -280,7 +284,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 
 .dropdown-item.active, .dropdown-item:active {
     background-color: transparent;
-  }
+}
 
 /* End of Bootstrap Mods */
 
