@@ -2152,6 +2152,7 @@ Usage (In Ghost editor):
     align-items: center;
     max-width: 920px;
     font-size: 80%; 
+    margin: 0 auto;
 /*    font-size: Voile Edit*/
 }
 
