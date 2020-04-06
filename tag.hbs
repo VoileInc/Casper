@@ -3,18 +3,28 @@
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 {{#tag}}
-<header class="site-header outer {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
+<header class="site-header outer {{#if feature_image}}"
+    style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
     <div class="inner">
-        {{> "site-nav"}}
+        {{> "site-nav-toggle"}}
         <div class="site-header-content">
-            <h1 class="site-title">{{name}}</h1>
-            <h2 class="site-description">
-                {{#if description}}
+            {{!-- <h1 class="site-title">{{name}}</h1> --}}
+            <header class="podcast-header">
+                <h2 class="blog-title">Fashion IRL</h2>
+                <h3 class="podcast-subtitle">(The Voile Podcast)</h3>
+                <h3 class="podcast-description">Voile CEO Rachael Nelson explores evolving perspectives within the
+                    fashion community.</h3>
+                <img class="podcast-icon" src="/assets/icons/apple-podcasts-icon.svg" />
+
+            </header>
+            {{!-- <h1 class="site-title">Fashion IRL: The Voile Podcast</h1> --}}
+            {{!-- <h3 class="site-description"></h3> --}}
+            {{!-- {{#if description}}
                     {{description}}
                 {{else}}
                     A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
-                {{/if}}
-            </h2>
+                {{/if}} --}}
+            {{!-- </h2> --}}
         </div>
     </div>
 </header>
@@ -25,8 +35,11 @@
     <div class="inner">
         <div class="post-feed">
             {{#foreach posts}}
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+            {{else}}
+            <img src="/assets/images/podcast-placeholder.png" />
+            <p class="podcast-empty-message">Stay tuned! We're in the editing room!</p>
             {{/foreach}}
         </div>
     </div>

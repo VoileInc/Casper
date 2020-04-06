@@ -273,6 +273,15 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     color: var(--brand-primary)
 }
 
+.dropdown-item {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+  }
+
 /* End of Bootstrap Mods */
 
 
@@ -639,7 +648,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .blog-title {
     font-family: Caslon Graphique EF;
-    font-size: 4rem;
+    font-size: 4rem;  
     color: var(--brand-secondary);
     margin-top: 2vw;
 }
@@ -2635,4 +2644,39 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
+
+/* 12. Podcast blog post feed */
+
+.podcast-header {
+    padding: 0;
+}
+
+.podcast-subtitle {
+    font-weight: 800;
+}
+
+.podcast-description {
+    max-width: 80%;
+    margin: 2vw auto;
+    text-align: center;
+    line-height: 3rem;
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+.podcast-icon {
+    max-height: 4vw;
+    max-width: 4vw;
+    margin-bottom: 2vw;
+}
+
+.podcast-empty-message {
+    text-align: center;
+    margin: 4vw;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 800;   
+}
+
+
 
