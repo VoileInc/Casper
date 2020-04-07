@@ -277,6 +277,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     color: var(--brand-primary);
 }
 
+.nav-item.dropdown {
+    padding: 0 13px;
+}
+
 .dropdown-item {
     font-size: 1.4rem;
     font-weight: 500;
