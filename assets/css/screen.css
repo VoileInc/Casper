@@ -290,6 +290,11 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     background-color: transparent;
 }
 
+.nav-tabs .nav-link>img {
+    width: 3vw;
+}
+
+
 /* End of Bootstrap Mods */
 
 
@@ -555,19 +560,19 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
 }
 
-.ad-in-website-info {
+.section-two-info {
     width: 40%;
-    margin-left: 5%;
-    margin-right: -2.5%;
+    margin-left: 10vw;
+    margin-right: 6vw;
     vertical-align: center;
     align-content: flex-end;
 }
 
-.ad-in-website-info h3 {
+.section-two-info h3 {
     font-size: 1.8rem;
 }
 
-.ad-in-website-mockup {
+.section-two-mockup {
     width: 60%;
 }
 
@@ -591,6 +596,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-top: 12vw;
     padding: 60px;
     background-repeat: no-repeat;
+    visibility: collapse;
+    display: none;
+}
+
+.section-three-mobile {
+    visibility: collapse;
+    display:none;
 }
 
 .section-three > h2 {
@@ -599,6 +611,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-bottom: 0;
 }
 
+/* 
 @media (max-width: 799px) {
     .section-three {
         visibility: collapse;
@@ -610,17 +623,76 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .section-three-mobile {
         visibility: visible;
     }
+} */
+
+.section-keywords {
+    margin: 12vw 0;
+    display: flex;
+    align-items: center;
+}
+
+.section-keywords-info {
+    width: 40%;
+    margin: 0 2vw 0 10vw;
+}
+
+.section-keywords-mockup {
+    width: 60%;
+    margin-right: 8vw;
+}
+
+.section-reporting {
+    background-image: url(../images/blue-gradient.png);
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+    .section-keywords {
+        flex-direction: column;
+    }
+    
+    .section-reporting {
+        flex-direction: column;
+    }
 }
 
 
-@media (min-width: 800px) {
-    .section-three {
-        visibility: visible;
-    }
+.section-reporting h2 {
+    font-weight: 1000;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    color: white;
+}
 
-    .section-three-mobile {
-        visibility: collapse;
-    }
+.section-reporting-info p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+.section-reporting-mockup {
+    width: 50%;
+}
+
+.section-reporting-info {
+    width: 50%;
+    margin: 0 6vw;
+}
+
+.bigger-and-bolder {
+    font-weight: 900;
+    font-size: 2rem;
 }
 
 
@@ -633,7 +705,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 60px 0;
+    margin: 12vw 0 0 0;
     padding: 60px;
     background-repeat: no-repeat;
 }
@@ -651,7 +723,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 64px 0;
+    margin: 64px 0 12vw 0;
 }
 
 .section-five h2 {
@@ -2710,6 +2782,57 @@ Usage (In Ghost editor):
     width: 100%;
     font-size: 2rem;
     font-weight: 800;   
+}
+
+/* About Page */
+
+.about.inner {
+    padding: 4vw 8vw;
+    
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.leading-info {
+    display: flex;
+}
+
+.leading-info > h1 {
+    font-family: Caslon Graphique EF;
+    margin: 4vw 4vw 2vw 0;
+}
+
+.most-memorable-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.most-memorable-section > h1 {
+    font-family: Caslon Graphique EF;
+    margin: 8vw 2vw;
+}
+
+.what-motivates-us-answer {
+    margin-top: 4vw;
+}
+
+.highlighted {
+    color: var(--brand-primary);
+    text-align: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.most-memorable-section > img {
+    background-color: white;
+    max-width: 60%;
+    margin:auto;
 }
 
 

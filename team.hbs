@@ -1,0 +1,32 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+{{#page}}
+<header class="site-header outer">
+    <div class="inner">
+        {{> "site-nav-toggle"}}
+        <div class="site-header-content">
+            <header class="team-header">
+                <h2 class="blog-title">Meet the team!</h2>
+             
+
+            </header>
+        </div>
+    </div>
+</header>
+{{/page}}
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    {{> "site-nav-toggle"}}
+    <div class="inner">
+        <h2 class="team-empty-message">Hey, thanks for checking us out!</h2>
+        <h2>Voile was founded as a direct-to-community tech company.</h2>
+                <p>We're tech people who love fashion. We spend a <i>lot</i> of time thinking about it.
+                <br>
+                We're readers of fashion blogs. Some of us sew. 
+                <br><br>
+    </div>
+    </div>
+</main>
