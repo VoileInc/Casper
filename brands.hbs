@@ -2,7 +2,12 @@
 
 <main id="about-main" class="about-main outer">
     {{> "site-nav-toggle"}}
-    <div class="about inner">
+    <div class="brands inner">
+
+        <h1>Decide where your ads end up.</h1><br><br>
+        <h2>Connect with audiences that understand your brand's story to generate impressions and clicks that count.
+        </h2>
+        {{!-- <img src="/assets/images/signupbelow_optimized.png"/> --}}
 
         <!-- Begin Mailchimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -28,7 +33,9 @@
             /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
         </style>
-        <div id="mc_embed_signup">
+
+
+        <div id="mc_embed_signup" class="form-embed">
             <form
                 action="https://voile.us19.list-manage.com/subscribe/post?u=e3f458a1f7dc4bc00e56bbca3&amp;id=f4609abaf6"
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
@@ -52,9 +59,30 @@
                         <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
                     </div>
                     <div class="mc-field-group">
-                        <label for="mce-CNAME">Company Name <span class="asterisk">*</span>
+                        <label for="mce-BRANDNAME">Brand Name <span class="asterisk">*</span>
                         </label>
-                        <input type="text" value="" name="CNAME" class="required" id="mce-CNAME">
+                        <input type="text" value="" name="BRANDNAME" class="required" id="mce-BRANDNAME">
+                    </div>
+
+                    <div class="mc-field-group">
+                        <label for="mce-WEBSITE">Website <span class="asterisk">*</span>
+                        </label>
+                        <input type="url" value="" name="WEBSITE" class="required url" id="mce-WEBSITE">
+                    </div>
+
+                    <div class="field-group groups" style="display:none">
+                        <ul class="interestgroup_field checkbox-group">
+                            <li class="!margin-bottom--lv2">
+                                <label class="checkbox" for="group_1">
+                                    <input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_1"
+                                        name="group[13028][1]" value="1" class="av-checkbox" checked>
+                                    <span>Voile Ads - Early Signup - Brand</span> </label> </li>
+                            <li class="!margin-bottom--lv2">
+                                <label class="checkbox" for="group_2">
+                                    <input type="checkbox" data-dojo-type="dijit/form/CheckBox" id="group_2"
+                                        name="group[13028][2]" value="1" class="av-checkbox"><span>Voile Ads - Early
+                                        Signup - Influencer</span> </label> </li>
+                        </ul>
                     </div>
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -63,8 +91,8 @@
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                             name="b_e3f458a1f7dc4bc00e56bbca3_f4609abaf6" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Sign Us Up!hee" name="subscribe"
-                            id="mc-embedded-subscribe" class="button"></div>
+                    <div class="clear"><input type="submit" value="Sign Up My Brand" name="subscribe"
+                            id="mc-embedded-subscribe" class="button button-default"></div>
                 </div>
             </form>
         </div>

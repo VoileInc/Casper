@@ -2908,5 +2908,45 @@ Usage (In Ghost editor):
     margin:auto;
 }
 
+/* For Influencers - Sign Up page*/
+
+/* For Brands - Sign Up page*/
+.form-embed {
+    padding: 4vw 12vw;
+}
+
+#mc_embed_signup .button{
+    background-color: var(--brand-primary) !important;
+    background: var(--brand-primary) !important;
+    color: white;
+    padding: 1vw 2vw !important;
+    font-weight: 800 !important;
+    font-family: Montserrat, sans-serif !important;
+    height: auto !important;
+}
+
+label, .indicates-required {
+    font-family: Montserrat, sans-serif !important;
+    text-transform: uppercase !important;
+}
 
 
+.brands.inner {
+    display: flex;
+    flex-direction: column;
+    padding: 12vw 2vw;
+    text-align: center;
+}
+
+.brands.inner h1 {
+    padding: 0;
+    margin: auto;
+    font-family: CaslonGraphiqueEF;
+}
+
+
+.brands.inner h2 {
+    padding: 0 14vw 8vw 14vw;
+    margin: auto;
+    font-size: 3rem;
+}
