@@ -80,6 +80,33 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     /* padding: 0 4vw; */
 }
 
+.temp-mobile-message {
+    display: none;
+   
+}
+
+.site-main .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 575.99px) {
+    .site-header.outer {
+        display:none;
+    }
+
+    .temp-mobile-message {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 12vw;
+    }
+
+    .site-main .inner {
+        display: none;
+    }
+}
+
 /* Usage:
 
 <div class="outer">
@@ -277,9 +304,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     color: var(--brand-primary);
 }
 
-.nav-item.dropdown {
-    padding: 0 13px;
+.nav-item {
+    padding-left: 13px;
 }
+
 
 .dropdown-item {
     font-size: 1.4rem;
@@ -497,6 +525,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-left: 13px;
 }
 
+@media (max-width: 575.99px) {
+    .button-default {
+        padding: 2vw 16px;
+    }
+}
+
 .inner.button-default {
     margin-top: 32px;
     width: 240px;
@@ -576,9 +610,28 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     width: 60%;
 }
 
+/* Section: How We Build */
+.section-how-we-build {
+    margin-top: 12vw;
+    padding: 20vw 4vw 20vw 4vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    background-image: url(../images/section-three-background.jpg);
+}
+
+.section-how-we-build h3 {
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.section-how-we-build p {
+    margin-top: 2vw;
+}
+
 
 .endorsement {
-    margin-top: 12vw;
     /* color: var(--brand-primary); */
     font-family: Caslon Graphique EF;
     color: var(--brand-primary);
@@ -586,6 +639,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     font-size: 4rem;
     line-height: 5rem;
     font-weight: 300;
+}
+.button-default.join-slack {
+    margin: 2vw 0;
+    max-width: 240px;
+    padding: 1vw 2vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    overflow-wrap: none;
 }
 
 /* 5c. Section Three */
@@ -636,6 +699,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 2vw 0 10vw;
 }
 
+.section-keywords-info > h2 {
+    margin: 0;
+}
+
 .section-keywords-mockup {
     width: 60%;
     margin-right: 8vw;
@@ -683,6 +750,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .section-reporting-mockup {
     width: 50%;
+    margin-left: 4vw;
 }
 
 .section-reporting-info {
@@ -705,6 +773,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 12vw 0 0 0;
     padding: 60px;
     background-repeat: no-repeat;
@@ -715,15 +784,19 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     /* top:50%;  */
     left:50%;
     right: 50%;
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
     /* bottom: 50%; */
+}
+
+.button-default.sign-up-early {
+    margin: 0;
 }
 
 .section-five {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 64px 0 12vw 0;
+    margin: 64px 4vw 12vw 4vw;
 }
 
 .section-five h2 {
