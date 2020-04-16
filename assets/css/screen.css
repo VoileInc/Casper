@@ -706,6 +706,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .section-keywords-mockup {
     width: 60%;
     margin-right: 8vw;
+    transition: all 0.5s ease !important;
+}
+
+.section-keywords-mockup:hover {
+    transition: all 0.4s ease !important;
+    transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
 .section-reporting {
@@ -2912,7 +2918,21 @@ Usage (In Ghost editor):
 
 /* For Brands - Sign Up page*/
 .form-embed {
-    padding: 4vw 12vw;
+    margin: 4vw 0;
+    background: url(../images/section-three-background.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    padding: 15vw 15vw;
+    font-family: Montserrat, sans-serif !important;
+    text-transform: uppercase !important;
+    text-align: start;
+}
+
+.form-embed h2 {
+    color: var(--brand-primary);
+    margin-left: 2vw;
 }
 
 #mc_embed_signup .button{
@@ -2925,28 +2945,57 @@ Usage (In Ghost editor):
     height: auto !important;
 }
 
+.mce_inline_error {
+    background: transparent !important;
+}
+
+#mc_embed_signup input {
+    border: none !important;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px !important;
+    background-color: white !important;
+}
+
+.mc-field-group {
+    transition: all 0.5s ease !important;
+}
+
+.mc-field-group:hover {
+    transition: all 0.4s ease !important;
+    transform: translate3D(0, -1px, 0) scale(1.02);
+}
+
 label, .indicates-required {
     font-family: Montserrat, sans-serif !important;
     text-transform: uppercase !important;
+    font-weight: 800;
 }
 
 
 .brands.inner {
     display: flex;
     flex-direction: column;
-    padding: 12vw 2vw;
     text-align: center;
 }
 
+.signup-header {
+    padding: 8vw 10vw;
+}
+
 .brands.inner h1 {
-    padding: 0;
+    padding: 0 4vw;
     margin: auto;
     font-family: CaslonGraphiqueEF;
+    font-size: 4rem;
 }
 
 
 .brands.inner h2 {
-    padding: 0 14vw 8vw 14vw;
+    padding: 0 0 2vw 0;
     margin: auto;
-    font-size: 3rem;
+    font-size: 2.4rem;
+}
+
+.brands.inner img {
+    align-self: center;
+    width: 80%;
 }
