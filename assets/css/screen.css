@@ -57,7 +57,8 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 .site-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
+    flex-flow: column;
 }
 
 .site-main {
@@ -2769,8 +2770,10 @@ Usage (In Ghost editor):
 
 .site-footer {
     position: relative;
+    height: auto;
     padding-top: 20px;
     padding-bottom: 60px;
+    clear: both;
     padding-left: 4vw;
     padding-right: 4vw;
     color: #fff;
