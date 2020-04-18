@@ -81,42 +81,11 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     /* padding: 0 4vw; */
 }
 
-.temp-mobile-message {
-    display: none;
-   
-}
 
 .site-main .inner {
     display: flex;
     flex-direction: column;
 }
-
-@media (max-width: 575.99px) {
-    .site-header.outer {
-        display:none;
-    }
-
-    .temp-mobile-message {
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 12vw;
-    }
-
-    .site-main .inner {
-        display: none;
-    }
-}
-
-/* Usage:
-
-<div class="outer">
-    <div class="inner">
-        Centered content
-    </div>
-</div>
-
-*/
 
 /* 3. Special Template Styles
 /* ---------------------------------------------------------- */
