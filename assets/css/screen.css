@@ -903,7 +903,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .blog-header {
     text-align: center;
-    padding: 4vw 0;
+    padding: 12vw 4vw;
 }
 
 .blog-title {
@@ -997,9 +997,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-title {
     margin-top: 0;
-    font-family: Caslon Graphique EF;
+    font-family: Montserrat;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .post-card-content {
@@ -2409,6 +2409,7 @@ Usage (In Ghost editor):
     max-width: 920px;
     font-size: 80%; 
     margin: 0 auto;
+    padding: 4vw;
 /*    font-size: Voile Edit*/
 }
 
