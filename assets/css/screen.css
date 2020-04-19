@@ -219,6 +219,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     .site-subdescription {
         margin-bottom: 6vw;
     }
+
+    .site-header-content .button-default {
+        /* align-self: flex-start; */
+    }
 }
 
 
@@ -2914,7 +2918,7 @@ Usage (In Ghost editor):
         /* margin-left: 0; */
     }
     .site-footer-nav a {
-        font-size: 2rem;
+        font-size: 1.6rem;
         position: inherit;
     }
 
@@ -3040,6 +3044,7 @@ Usage (In Ghost editor):
     font-weight: 800 !important;
     font-family: Montserrat, sans-serif !important;
     height: auto !important;
+    margin-top: 4vw !important;
 }
 
 .mce_inline_error {
@@ -3095,4 +3100,48 @@ label, .indicates-required {
 .brands.inner img {
     align-self: center;
     width: 80%;
+}
+
+
+@media (max-width: 599.99px) {
+
+    .signup-header {
+        padding: 12vw 4vw;
+    }
+
+    .signup-header h1 {
+        padding: 0;
+    }
+
+    .brands.inner h1{
+        font-size: 3rem;
+        text-align: left;
+        padding: 0;
+    }
+
+    .signup-header ul > li {
+        text-align: left;
+    }
+
+    .brands.inner h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .brands.inner img {
+        width: 110%;
+        max-width: none;
+    }
+
+    .form-embed {
+        padding: 4vw !important;
+    }
+
+    #mc_embed_signup .form {
+        padding: 0 !important;
+    }
+
+
+
+
 }
