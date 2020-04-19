@@ -592,14 +592,30 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 @media (max-width: 575.99px) {
     .section-two {
-        align-items: center;
+        text-align: left;
+        flex-direction: column;
+        padding: 12vw 0;
+    }
+
+    .section-two-info {
+        width: 100%;
+        padding: 0 4vw;
+        margin-bottom: 8vw;
+    }
+
+    .section-two-info h2 {
+        margin: 0;
+    }
+
+    .section-two-mockup {
+        width: 100%;
     }
 }
 
 /* Section: How We Build */
 .section-how-we-build {
     margin-top: 12vw;
-    padding: 12vw 4vw 12vw 4vw;
+    padding: 12vw 4vw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -632,6 +648,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 @media (max-width: 575.99px) {
     .section-two {
         align-items: left;
+    }
+
+    .section-how-we-build {
+        padding: 12vw 4vw;
+        margin: 12vw 0;
+    }
+
+    .section-how-we-build h2 {
+        margin: 0;
     }
 
     .section-how-we-build > h2, h3, p {
