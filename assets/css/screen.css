@@ -211,13 +211,13 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     }
     
     .site-logo {
-/*      Voile Edit: allow the site logo to take up more space on mobile*/
         max-width: 98%;
-    }
-    
-    .site-logo {
 /*      Voile Edit: allow the site logo to take up more space on mobile*/
         /* max-width: 80%; */
+    }
+
+    .site-subdescription {
+        margin-bottom: 6vw;
     }
 }
 
