@@ -284,10 +284,10 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding-left: 13px;
 }
 
-
 .dropdown-item {
     font-size: 1.4rem;
     font-weight: 500;
+    padding: 2vw;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -298,6 +298,20 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     width: 3vw;
 }
 
+@media (max-width: 599.99px) {
+
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+    }
+
+    .dropdown-menu.show {
+        border-color: transparent;
+    }
+
+    .dropdown-item {
+        padding: 4vw;
+    }
+}
 
 /* End of Bootstrap Mods */
 
