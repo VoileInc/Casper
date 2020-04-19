@@ -201,11 +201,13 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 }
 
 @media (max-width: 500px) {
-    .site-title {
+    h2 {
         font-size: 3rem;
+        text-align: left;
     }
-    .site-description {
+    h3 {
         font-size: 1.6rem;
+        text-align: left;
     }
     
     .site-logo {
@@ -492,12 +494,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0 16px;
     font-weight: 600;
     line-height: 36px;
-    margin-left: 13px;
+    /* margin-left: 13px; */
 }
 
 @media (max-width: 575.99px) {
     .button-default {
-        padding: 2vw 16px;
+        padding: 1vw 2vw;
+        margin-top: 8vw;
     }
 }
 
@@ -550,6 +553,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     background-position: center;    
 }
 
+@media (max-width: 575.99px) {
+    .wordpress-plugin-mockup {
+        max-width: none;
+        width: 125vw;
+    }
+}
+
 .section-one h3 {
     font-weight: 900;
     text-align: center;
@@ -578,6 +588,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .section-two-mockup {
     width: 60%;
+}
+
+@media (max-width: 575.99px) {
+    .section-two {
+        align-items: center;
+    }
 }
 
 /* Section: How We Build */
@@ -611,15 +627,33 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     line-height: 5rem;
     font-weight: 300;
 }
+
+
+@media (max-width: 575.99px) {
+    .section-two {
+        align-items: left;
+    }
+
+    .section-how-we-build > h2, h3, p {
+        text-align: left;
+    }
+}
 .button-default.join-slack {
     margin: 2vw 0;
     max-width: 240px;
-    padding: 1vw 2vw;
+    padding: 1vw 48px;
     align-items: center;
     justify-content: center;
     align-content: center;
     align-self: center;
     overflow-wrap: none;
+}
+
+
+@media (max-width: 575.99px) {
+    .button-default.join-slack {
+        align-self: flex-start;
+    }
 }
 
 /* 5c. Section Three */
@@ -685,6 +719,17 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
+@media (max-width: 575.99px) {
+    .section-keywords-info {
+        width: 100%;
+    }
+
+    .section-keywords-mockup {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
 .section-reporting {
     /* background-image: url(../images/blue-gradient.png); */
     padding-top: 12vw;
@@ -700,17 +745,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     background-size: cover;
     background-repeat: no-repeat; */
 }
-
-@media (max-width: 500px) {
-    .section-keywords {
-        flex-direction: column;
-    }
-    
-    .section-reporting {
-        flex-direction: column;
-    }
-}
-
 
 .section-reporting h2 {
     font-weight: 1000;
@@ -733,6 +767,29 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .section-reporting-info {
     width: 50%;
     margin: 0 6vw;
+}
+
+
+@media (max-width: 500px) {
+    .section-keywords {
+        flex-direction: column;
+    }
+    
+    .section-reporting {
+        flex-direction: column;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    .section-reporting-mockup {
+        width: 100%;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .section-reporting-info {
+        width: 100%;
+    }
 }
 
 .bigger-and-bolder {
@@ -769,10 +826,24 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0;
 }
 
+@media (max-width: 500px) {
+   .section-four {
+       padding: 0 4vw;
+       align-items: flex-start;
+   }
+   
+   .button-default.sign-up-early {
+       margin: 2vw 0;
+       align-items: left;
+       padding: 1vw 48px;
+   }
+}
+
 .section-five {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 5rem;
     margin: 64px 4vw 12vw 4vw;
 }
 
@@ -788,6 +859,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-decoration: underline;
     text-transform: uppercase;
 
+}
+
+@media (max-width: 600px) {
+    .section-five h2 {
+        line-height: 3rem;
+        font-size: 2rem;
+    }
 }
 /* END OF LANDING PAGE */
 
@@ -2797,9 +2875,15 @@ Usage (In Ghost editor):
 @media (max-width: 650px) {
     .site-footer-content {
         flex-direction: column;
+        flex-wrap: nowrap;
+        
     }
+
     .site-footer-nav a:first-child {
-        margin-left: 0;
+        /* margin-left: 0; */
+    }
+    .site-footer-nav a {
+        font-size: 2rem;
     }
 }
 
