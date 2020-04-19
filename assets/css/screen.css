@@ -2904,11 +2904,22 @@ Usage (In Ghost editor):
         
     }
 
+    .site-footer-nav {
+       flex-wrap: wrap;
+       line-height: 5rem;
+       justify-content: center;
+    }
+
     .site-footer-nav a:first-child {
         /* margin-left: 0; */
     }
     .site-footer-nav a {
         font-size: 2rem;
+        position: inherit;
+    }
+
+    .copyright {
+        font-size: 110%;
     }
 }
 
