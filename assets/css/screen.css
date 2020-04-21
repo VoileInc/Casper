@@ -347,10 +347,14 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
         padding-left: 4vw;
         flex: 0 0 auto; /* Voile Edit:*/
     }
-    /* .site-nav-right {
-       display: none;
-    } */
+
 }
+/* 
+@media (max-width: 991.99px) {
+    .site-nav-right .button-default {
+        padding: 2vw 4vw;
+    }
+} */
 
 /* Site Nav Hack Explanation (above):
 
@@ -582,6 +586,159 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     font-weight: 900;
     text-align: center;
 }
+
+/* 5a1. Home - Embeddable Ad Frame Selection */
+
+.frame-options {
+    padding: 12vw 24vw 4vw 24vw;
+    background-color: var(--brand-tertiary);
+    align-content: center;
+    text-align: center;
+}
+
+.frame-options > h2 {
+    font-family: CaslonGraphiqueEF;
+    font-size: 5rem;
+}
+
+.embeddable-ad-frame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    overflow-x: auto;
+    height: auto;
+    background-color: var(--brand-tertiary);
+    flex: 1;
+    padding-left: 4vw;
+    padding-bottom: 12vw;
+}
+
+.labeled-ad {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vw;
+    width: max-content;
+    transition: all 0.5s ease;
+}
+
+.labeled-ad:hover {
+    transition: all 0.4s ease;
+    transform: translate3D(0, -1px, 0) scale(1.02);
+}
+
+.ad-frame-outer {
+    width: max-content; /* SO important to allow content to grow it's width to maintain aspect ratio while ALSO allowing parent flex container to scroll horizontally past width of view window*/
+    background-color: white;
+    height: 600px;
+}
+
+.polaroid .ad-frame-outer {
+    border-radius: 3px;
+    background-color: white;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+}
+
+.borderless .ad-frame-outer {
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 2vw;
+    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+}
+
+.flat .ad-frame-outer {
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 2vw;
+}
+
+.squared .ad-frame-outer {
+    border-radius: 0px;
+    background-color: white;
+    margin-bottom: 2vw;
+    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+}
+
+.black-frame .ad-frame-outer {
+    border-radius: 0px;
+    margin-bottom: 2vw;
+    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+}
+
+.transparent-label .ad-frame-outer {
+    border-radius: 0px;
+    margin-bottom: 2vw;
+    background: transparent;
+}
+
+.ad-frame-inner {
+    height: 86%;
+    width: auto;
+    object-fit: cover;
+    background-color: white;
+    padding: 0;
+}
+
+
+.polaroid .ad-frame-inner {
+    border-radius: 3px;
+    border-color: #C1C1BA;
+}
+
+.squared .ad-frame-inner {
+    border-radius: 0;
+    padding: 1vw;
+}
+
+.black-frame .ad-frame-inner {
+    background-color: black;
+    padding: 1vw;
+}
+
+.transparent-frame .ad-frame-inner {
+    padding: 1vw;
+}
+
+
+.ad-label {
+    margin: 0;
+    vertical-align: center;
+    padding-top: 1vw;
+}
+
+.borderless .ad-label {
+    padding: 1vw;
+}
+
+.flat .ad-label {
+    padding: 1vw;
+}
+
+.squared .ad-label {
+    padding: 1vw;
+}
+
+.black-frame .ad-label {
+    padding: 1vw;
+}
+
+.transparent-frame .ad-label {
+    padding: 1vw;
+}
+
+.ad-name {
+    margin: 0;
+}
+
+@media (max-width: 499.99px) {
+    .ad-frame-outer {
+        height: 300px;
+    }
+}
+
+
 
 /* 5b. Section Two */
 
