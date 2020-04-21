@@ -588,7 +588,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 /* 5a1. Home - Embeddable Ad Frame Selection */
 
 .frame-options {
-    padding: 6vw 12vw 4vw 12vw;
+    padding: 6vw 12vw 0 12vw;
     background-color: var(--brand-tertiary);
     align-content: center;
     text-align: center;
@@ -629,7 +629,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .ad-frame-outer {
     width: max-content; /* SO important to allow content to grow it's width to maintain aspect ratio while ALSO allowing parent flex container to scroll horizontally past width of view window*/
     background-color: white;
-    height: 600px;
+    height: 500px;
     margin-bottom: 2vw;
     box-shadow: 8px 14px 38px hsla(0, 0%, 0%, 0.16), 1px 3px 8px rgba(0, 0, 0, 0.03)
 }
