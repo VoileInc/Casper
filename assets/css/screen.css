@@ -187,16 +187,14 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     padding: 25px 0 16px 0;  /*--Voile Edit: decrease padding between description and logo*/
     font-size: 5rem;
     font-weight: 800;
-    font-family: Montserrat;
+    font-family: CaslonGraphiqueEF;
     max-width: 98%; /*--Voile Edit: add a little padding to the sides*/
-    letter-spacing: 0.5px;
-    opacity: 0.9;
 }
 
 .site-subdescription {
     font-weight: 500;
     font-size: 2rem;
-    font-style: italic;
+    /* font-style: italic; */
     margin-top: 0;
 }
 
@@ -709,6 +707,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .ad-label-right{
+    padding-top: 1vw;
     padding-right: 1vw;
     visibility: hidden;
     opacity: 0;
@@ -800,7 +799,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .section-two-info h2 {
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 .section-two-info h3 {
@@ -836,7 +835,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 /* Section: How We Build */
 .section-how-we-build {
-    margin-top: 12vw;
     padding: 12vw 4vw;
     display: flex;
     flex-direction: column;
