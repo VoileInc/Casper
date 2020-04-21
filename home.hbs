@@ -48,14 +48,21 @@ into the {body} of the default.hbs template --}}
         <div class="frame-options">
             <h2>Digital <i>Gloss.</i></h2>
             <h3>Sleek frames designed for beautiful ads and modern websites.</h3>
-            <h4>(If Warby Parker made frames for ads, this is what they'd look like.)</h4>
+            <h4><i>(If Warby Parker made frames for digital ads, this is what they'd look like.)</i></h4>
         </div>
-        {{!-- <div class="scrolling-list"> --}}
+        
         <div class="embeddable-ad-frame" >
             <div class="labeled-ad polaroid">
                 <div class="ad-frame-outer">
                     <img class="ad-frame-inner" src="assets/images/ads/celine.jpg"/>
-                    <p class="ad-label" >Advertisement</p>
+                    <div class="ad-label-container">
+                        <p class="ad-label">Advertisement</p>
+                        <div class="ad-label-right">
+                            <img class="ad-icon thumbs-up" src="assets/icons/ads/thumbs-up.svg"/>
+                            <img class="ad-icon thumbs-down" src="assets/icons/ads/thumbs-down.svg"/>
+                            <img class="ad-icon report-issue" src="assets/icons/ads/report-issue.svg"/>
+                        </div>
+                    </div>
                 </div>
                 <p class="ad-name">Polaroid</p>
             </div>
@@ -63,7 +70,14 @@ into the {body} of the default.hbs template --}}
              <div class="labeled-ad borderless">
                 <div class="ad-frame-outer">
                     <img class="ad-frame-inner" src="assets/images/ads/ad-kate-spade.jpg"/>
-                    <p class="ad-label" >Advertisement</p>
+                    <div class="ad-label-container">
+                        <p class="ad-label long">Advertisement</p>
+                        <div class="ad-label-right">
+                            <img class="ad-icon thumbs-up" src="assets/icons/ads/thumbs-up.svg"/>
+                            <img class="ad-icon thumbs-down" src="assets/icons/ads/thumbs-down.svg"/>
+                            <img class="ad-icon report-issue" src="assets/icons/ads/report-issue.svg"/>
+                        </div>
+                    </div>
                 </div>
                 <p class="ad-name">Borderless</p>
             </div>
@@ -71,7 +85,14 @@ into the {body} of the default.hbs template --}}
             <div class="labeled-ad squared">
                 <div class="ad-frame-outer">
                     <img class="ad-frame-inner" src="assets/images/ads/saint-laurent-mens.jpg"/>
-                    <p class="ad-label" >Advertisement</p>
+                    <div class="ad-label-container">
+                        <p class="ad-label long">Advertisement</p>
+                        <div class="ad-label-right">
+                            <img class="ad-icon thumbs-up" src="assets/icons/ads/thumbs-up.svg"/>
+                            <img class="ad-icon thumbs-down" src="assets/icons/ads/thumbs-down.svg"/>
+                            <img class="ad-icon report-issue" src="assets/icons/ads/report-issue.svg"/>
+                        </div>
+                    </div>
                 </div>
                 <p class="ad-name">Squared</p>
             </div>
@@ -79,7 +100,14 @@ into the {body} of the default.hbs template --}}
             <div class="labeled-ad flat">
                 <div class="ad-frame-outer">
                     <img class="ad-frame-inner" src="assets/images/ads/warby-carly.jpg"/>
-                    <p class="ad-label" >Advertisement</p>
+                    <div class="ad-label-container">
+                        <p class="ad-label long">Advertisement</p>
+                        <div class="ad-label-right">
+                            <img class="ad-icon thumbs-up" src="assets/icons/ads/thumbs-up.svg"/>
+                            <img class="ad-icon thumbs-down" src="assets/icons/ads/thumbs-down.svg"/>
+                            <img class="ad-icon report-issue" src="assets/icons/ads/report-issue.svg"/>
+                        </div>
+                    </div>
                 </div>
                 <p class="ad-name">Flat</p>
             </div>
@@ -87,21 +115,42 @@ into the {body} of the default.hbs template --}}
              <div class="labeled-ad black-frame">
                 <div class="ad-frame-outer">
                     <img class="ad-frame-inner" src="assets/images/ads/st-laurent-split.jpg"/>
-                    <p class="ad-label" >Advertisement</p>
+                    <div class="ad-label-container">
+                        <p class="ad-label long">Advertisement</p>
+                        <div class="ad-label-right">
+                            <img class="ad-icon thumbs-up" src="assets/icons/ads/thumbs-up.svg"/>
+                            <img class="ad-icon thumbs-down" src="assets/icons/ads/thumbs-down.svg"/>
+                            <img class="ad-icon report-issue" src="assets/icons/ads/report-issue.svg"/>
+                        </div>
+                    </div>
                 </div>
-                <p class="ad-name">Dark Border<br>(for ads with blocks of whitespace)</p>
+                <p class="ad-name">Dark Frame<br><span class="less-attention">(For ads with blocks of whitespace)</span></p>
             </div>
 
             <div class="labeled-ad transparent-label">
                 <div class="ad-frame-outer">
                     <img class="ad-frame-inner" src="assets/images/ads/Isabel-Marant-borderless.jpg"/>
-                    <p class="ad-label" >Advertisement</p>
+                    <div class="ad-label-container">
+                        <p class="ad-label long">Advertisement</p>
+                        <div class="ad-label-right">
+                            <img class="ad-icon thumbs-up" src="assets/icons/ads/thumbs-up.svg"/>
+                            <img class="ad-icon thumbs-down" src="assets/icons/ads/thumbs-down.svg"/>
+                            <img class="ad-icon report-issue" src="assets/icons/ads/report-issue.svg"/>
+                        </div>
+                    </div>
                 </div>
-                <p class="ad-name">Transparent Label</p>
+                <p class="ad-name">Transparent Label<br><span class="less-attention">(Also for ads with blocks of whitespace)</span></p>
             </div>
 
         </div>
-        {{!-- </div> --}}
+
+         <div class="section-keywords">
+            <div class="section-keywords-info">
+                <h2>Fashion-specific keywords match the right ads to the right content.</h2>
+                <h3>Humans with branded perspectives (<i>not algorithms</i>) provide the context and connection permissions that do the matching between advertiser and publisher.</h3>
+            </div>
+            <img class="section-keywords-mockup" src="assets/images/fashionkeywordmap_optimized.png" />
+        </div>
 
         <div class="section-how-we-build">
             <h2 class="endorsement">Built with influencers.</br> Built with brands.</h2>
@@ -110,7 +159,7 @@ into the {body} of the default.hbs template --}}
             <a class="button-default join-slack" href="/join-our-slack/">Join our Slack</a>
         </div>
 
-        <div class="section-three">
+        {{!-- <div class="section-three">
             <h2>How it works:</h2>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-register" role="tabpanel"
@@ -157,19 +206,7 @@ into the {body} of the default.hbs template --}}
                     </a>
                 </div>
             </nav>
-        </div>
-
-        <div class="section-three-mobile">
-            <p>Fill me!</p>
-        </div>
-
-        <div class="section-keywords">
-            <div class="section-keywords-info">
-                <h2>Fashion-specific keywords match the right ads to the right content.</h2>
-                <h3>Humans with branded perspectives (<i>not algorithms</i>) provide context.</h3>
-            </div>
-            <img class="section-keywords-mockup" src="assets/images/fashionkeywordmap_optimized.png" />
-        </div>
+        </div> --}}
 
         <div class="section-reporting">
             <img class="section-reporting-mockup" src="assets/images/adhoverstates_optimized.png"/>
@@ -189,7 +226,7 @@ into the {body} of the default.hbs template --}}
         </div>
 
         <div class="section-five">
-            <h2>Fashion brands <a href="/brands/">Learn More Here ></a></h2>
+            <h2>Fashion brands <a href="/brands/">Learn More Here></a></h2>
         </div>
 
     </div>

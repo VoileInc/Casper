@@ -185,7 +185,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
     z-index: 10;
     margin: 48px 0 0 0;
     padding: 25px 0 16px 0;  /*--Voile Edit: decrease padding between description and logo*/
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-weight: 800;
     font-family: Montserrat;
     max-width: 98%; /*--Voile Edit: add a little padding to the sides*/
@@ -195,7 +195,7 @@ background: #ffffff; /*    --Voile Edit: Make the background white*/
 
 .site-subdescription {
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-style: italic;
     margin-top: 0;
 }
@@ -590,7 +590,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 /* 5a1. Home - Embeddable Ad Frame Selection */
 
 .frame-options {
-    padding: 12vw 24vw 4vw 24vw;
+    padding: 6vw 12vw 4vw 12vw;
     background-color: var(--brand-tertiary);
     align-content: center;
     text-align: center;
@@ -611,6 +611,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     background-color: var(--brand-tertiary);
     flex: 1;
     padding-left: 4vw;
+    padding-top: 4vw; /* allows for a nice box-shadow overlap */
     padding-bottom: 12vw;
 }
 
@@ -631,46 +632,43 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     width: max-content; /* SO important to allow content to grow it's width to maintain aspect ratio while ALSO allowing parent flex container to scroll horizontally past width of view window*/
     background-color: white;
     height: 600px;
+    margin-bottom: 2vw;
+    box-shadow: 8px 14px 38px hsla(0, 0%, 0%, 0.16), 1px 3px 8px rgba(0, 0, 0, 0.03)
 }
 
 .polaroid .ad-frame-outer {
     border-radius: 3px;
     background-color: white;
-    padding: 1vw;
-    margin-bottom: 2vw;
-    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
 }
 
 .borderless .ad-frame-outer {
     border-radius: 2px;
     background-color: white;
-    margin-bottom: 2vw;
-    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
 }
 
 .flat .ad-frame-outer {
     border-radius: 2px;
     background-color: white;
-    margin-bottom: 2vw;
+    box-shadow: none;
 }
 
 .squared .ad-frame-outer {
     border-radius: 0px;
     background-color: white;
-    margin-bottom: 2vw;
-    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
 }
 
 .black-frame .ad-frame-outer {
     border-radius: 0px;
-    margin-bottom: 2vw;
-    box-shadow: rgba(170, 174, 179, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
 }
 
 .transparent-label .ad-frame-outer {
     border-radius: 0px;
-    margin-bottom: 2vw;
     background: transparent;
+    box-shadow: none;
+}
+
+.transparent-label img {
+    box-shadow: 8px 14px 38px hsla(0, 0%, 0%, 0.16), 1px 3px 8px rgba(0, 0, 0, 0.03);
 }
 
 .ad-frame-inner {
@@ -681,15 +679,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0;
 }
 
-
 .polaroid .ad-frame-inner {
+    margin: 1vw 1vw 0 1vw;
     border-radius: 3px;
     border-color: #C1C1BA;
 }
 
 .squared .ad-frame-inner {
     border-radius: 0;
-    padding: 1vw;
+    padding: 1vw 1vw 0 1vw;
 }
 
 .black-frame .ad-frame-inner {
@@ -701,40 +699,85 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 1vw;
 }
 
-
 .ad-label {
     margin: 0;
-    vertical-align: center;
-    padding-top: 1vw;
+    align-self: center;
+    padding-left: 1vw;
+    font-family: Permanent Marker;
+    font-size: 2rem;
+    width: min-content;
 }
 
-.borderless .ad-label {
-    padding: 1vw;
+.ad-label-right{
+    padding-right: 1vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s linear;
 }
 
-.flat .ad-label {
-    padding: 1vw;
+.ad-frame-outer:hover .ad-label {
+    transition: opacity 0.4s linear;
 }
 
-.squared .ad-label {
-    padding: 1vw;
+.ad-frame-outer:hover .ad-label-right {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.4s linear;
 }
 
-.black-frame .ad-label {
-    padding: 1vw;
-}
-
-.transparent-frame .ad-label {
-    padding: 1vw;
-}
 
 .ad-name {
     margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.less-attention {
+    font-weight: 500;
+    text-transform: none;
+    font-style: italic;
+}
+
+.ad-label-container {
+    display: flex;
+    height: 12%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.ad-label-right {
+    align-content: flex-end;
+}
+
+.ad-icon {
+    height: 3rem;
+    margin: .5vw;
+    transform: translate3D(0, -1px, 0) scale(1.04);
+}
+
+.ad-icon:hover {
+    transform: translate3D(0, -1px, 0) scale(1.04);
 }
 
 @media (max-width: 499.99px) {
     .ad-frame-outer {
-        height: 300px;
+        height: 400px;
+    }
+
+
+    .ad-label {
+        font-size: 1.6rem;
+    }
+
+    .frame-options {
+        padding: 4vw;
+    }
+
+    .frame-options h2, h2, h4 {
+        text-align: left;
+        
     }
 }
 
@@ -744,17 +787,20 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 
 .section-two {
-    margin-top: 12vw;
     display: flex;
     align-items: center;
 }
 
 .section-two-info {
     width: 40%;
-    margin-left: 10vw;
-    margin-right: 6vw;
+    margin-left: 8vw;
+    margin-bottom: 8vw;
     vertical-align: center;
     align-content: flex-end;
+}
+
+.section-two-info h2 {
+    font-size: 4rem;
 }
 
 .section-two-info h3 {
@@ -774,8 +820,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
     .section-two-info {
         width: 100%;
-        padding: 0 4vw;
-        margin-bottom: 8vw;
+        padding: 4vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
 
     .section-two-info h2 {
@@ -814,9 +861,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     font-family: Caslon Graphique EF;
     color: var(--brand-primary);
     text-align: center;
-    font-size: 4rem;
-    line-height: 5rem;
-    font-weight: 300;
+    font-size: 5rem;
 }
 
 
@@ -900,8 +945,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .section-keywords-info {
-    width: 40%;
-    margin: 0 2vw 0 10vw;
+    /* width: 40%; */
+    padding: 4vw;
 }
 
 .section-keywords-info > h2 {
@@ -910,7 +955,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .section-keywords-mockup {
     width: 60%;
-    margin-right: 8vw;
     transition: all 0.5s ease !important;
 }
 
@@ -1149,6 +1193,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     line-height: 1.15em;
     font-weight: 500;
     font-family: Permanent Marker;
+    font-size: 3rem;
     letter-spacing: 0.5px;
     padding-left: 15px;
     text-transform: uppercase;
