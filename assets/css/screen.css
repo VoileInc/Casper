@@ -706,6 +706,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     width: min-content;
 }
 
+.polaroid .ad-label-right {
+    padding-top: 0;
+    align-self: center;
+}
+
 .ad-label-right{
     padding-top: 1vw;
     padding-right: 1vw;
@@ -1116,7 +1121,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .blog-header {
     text-align: center;
-    padding: 12vw 4vw;
+    padding: 6vw 4vw;
 }
 
 .blog-title {
@@ -1187,8 +1192,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin-bottom: 4px;
     color: var(--brand-secondary);
-    font-size: 1.2rem;
-    line-height: 1.15em;
+    font-size: 2rem;
     font-weight: 500;
     font-family: Permanent Marker;
     font-size: 3rem;
@@ -1212,7 +1216,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-title {
     margin-top: 0;
     font-family: Montserrat;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
